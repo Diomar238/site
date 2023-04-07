@@ -1,57 +1,139 @@
-<!-- Indica que o documento é um arquivo HTML. -->
 <!DOCTYPE html>
+<html lang="en">
 
-<!-- Define a linguagem do conteúdo da página. -->
-<html lang="pt-br">
-
-<!-- Armazena informações sobre a página. -->
 <head>
-
-	<!-- Conjunto de caracteres que contém acentuação e ç. -->
-	<meta charset="utf-8">
-
-	<!-- Configuração da janela de visualização ( responsividade ). -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Importação do arquivo CSS. -->
-	<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
-
-	<!-- Título da aba do navegador -->
-	<title>Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+    <script src="https://kit.fontawesome.com/199e0e5019.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="kiwi-svgrepo-com.svg">
+    <title>kiwi</title>
 </head>
 
-<!-- Conteúdo apresentado na tela. -->
 <body>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <h1 class="logo">Dio Tech</h1>
+            <ul id="navbar-items">
+                <li><a href="#showcase">Início</a></li>
+                <li><a href="#companies">desenvolvimento</a></li>
+                <li><a href="#gallery">filmes</a></li>
+                <li><a href="#">Em manutenção</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	<!-- Agrupa os elementos que compõe o cabeçalho. -->
-	<header>
-		<a href="./layout.html" id="logo">Logo</a>
+    <header id="showcase">
+        <div id="showcase-container">
+            <h2>nada de mais</h2>
+            
+            <a class="btn" href="#companies">Saiba mais</a>
+        </div>
+    </header>
 
-		<button id="openMenu">&#9776;</button>
+    <!-- About -->
+    <section id="companies">
+        <div class="headline">nada aqui também</div>
+        <div id="companies-container">
+            <img src="" alt="" class="company">
+            <img src="" alt="" class="company">
+            <img src="" alt="" class="company">
+            <img src="" alt="" class="company">
+        </div>
+    </section>
 
-		<!-- Agrupa links de navegação no site. -->
-		<nav id="menu">
 
-			<button id="closeMenu">X</button>
+    <section id="features">
+        <div class="headline"> Em Desenvolvimento</div>
+        <div id="features-container">
+            <div class="feature">
+                <i class="fas fa-tachometer-alt fa-3x"></i>
+                <span class="title">Bacana</span>
+                <p>...........</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-code fa-3x"></i>
+                <span class="title">Da hora</span>
+                <p>.........</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-layer-group fa-3x"></i>
+                <span class="title">Legal</span>
+                <p>.........</p>
+            </div>
+        </div>
+    </section>
 
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Products</a>
-			<a href="">Contact</a>
-		</nav>
-		
-	</header>
+    <section id="product">
+        <div class="headline">Nada e mais nada</div>
+        <div id="product-container">
+            <img src="/img/iphone-x.png" alt="">
+            <div class="items">
+                <div class="item">
+                    <i class="fas fa-map-marked fa-2x color-primary"></i>
+                    <p>.........</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-users fa-2x color-primary"></i>
+                    <p>.......</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-glass-cheers fa-2x color-primary"></i>
+                    <p>............</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-glass-cheers fa-2x color-primary"></i>
+                    <p>............</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Agrupa o conteúdo principal da página ou aplicação. -->
-	<main>Main</main>
+    <section id="testimonials">
+        <div class="headline">Se não era nada antes imagina agora</div>
+        <div id="testimonials-container">
+            <div class="testimonial">
+                <img src="/img/person-1.jpeg" alt="" class="person">
+                <p>..........</p>
+            </div>
+            <div class="testimonial">
+                <img src="/img/person-2.jpeg" alt="" class="person">
+                <p>...................</p>
+            </div>
+        </div>
+    </section>
 
-	<!-- Agrupa informações e links relacionado ao conteúdo principal. -->
-	<aside>Aside</aside>
+    <section id="gallery">
+        <div class="headline">filmes</div>
+        <div id="gallery-container">
+        <a href="https://diomar238.github.io/filmes/alita.html"><img src="https://s.aficionados.com.br/imagens/alita1_cke.jpg" alt="" class="gallery-image"></a> 
+        <a href="https://diomar238.github.io/filmes/jonh2.html"><img src="https://br.web.img3.acsta.net/pictures/19/04/03/21/31/0977319.jpg" alt="" class="gallery-image"></a> 
+        <a href="https://diomar238.github.io/filmes/gameofthones.html"><img src="https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SX300.jpg" alt="" class="gallery-image"></a>
+        <a href="https://diomar238.github.io/filmes/desafioemtokio.html"><img src="https://static.wikia.nocookie.net/dublagem/images/d/dc/TokyoDrift.jpg/revision/latest?cb=20220519163000&path-prefix=pt-br" alt="" class="gallery-image"></a>
+        <a href="https://diomar238.github.io/filmes/Godzilla.II.Rei.dos.Monstros.html"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/7/7e/Godzilla_King_of_the_Monsters.jpg/250px-Godzilla_King_of_the_Monsters.jpg" alt="" class="gallery-image"></a>  
+        <a href=""><img src="" alt="" class="gallery-image"></a>
+            
+        </div>
+    </section>
 
-	<!-- Agrupa informações de autoria, direitos autorais, contato, 
-		   mapa do site, links e documento relacionados. -->
-	<footer>Footer</footer>
+    <footer id="footer">
+        <div class="col-sm-6">
+            <p><i class="fa-solid fa-envelope"></i> E-mail:<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent?compose=VpCqJTCHczPvxfvPNkmqdjxVQCvDdKQvKPQjWRqgNFNLMQbcvqjjJpDXDtbFngZtHCRtPxq">shaolin_matador_de_porco@gmail.com</a></p>
+          </div>
+        <p><span>&#169;</span> 2023 - Todos os direitos reservados.</p>
+        
+    </footer>
 
-	<!-- Importação do arquivo JavaScript. -->
-	<script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Smooth Scrolling -->
+    <script src="js/main.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
 </body>
+
+</html>
